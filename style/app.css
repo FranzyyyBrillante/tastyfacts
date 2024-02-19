@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    background: #31639c; 
+}
+
+nav{
+    width: 100%;
+    background-color: #ff7b00;
+    overflow: hidden;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 40px 40px;
+    text-align: center;
+    color:white;
+    display: block;
+    font-weight: 700;
+}
+
+/* Search-flex-box content */
+.search-flex-box {
+    display: flex;
+    justify-content: center;
+    margin-top: -400px;
+}
+
+.search-bar-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    padding: 5px;
+    max-width: 450px;
+    margin-top: 300px;
+}
+
+.search-bar,
+.auto-complete-box {
+    outline: none;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar {
+    padding-left: 10px;
+}
+
+
+.search-icon {
+    position: absolute;
+    top: 15%;
+    left: 94%;
+}
+
+/* search results */
+.search-results-flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search-results-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 800px;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+.search-feedback-box {
+    margin: 20px;
+    color: #f7f9fb;
+}
+
+/* food boxes */
+
+.branded-food-box {
+    display: flex;
+    align-items: center;
+    outline: 0;
+    border: 0;
+    width: 49%;
+    margin: 5px 0px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.food-box {
+    display: flex;
+    align-items: center;
+    outline: 0;
+    border: 0;
+    width: 49%;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+.food-name{
+    text-align: left;
+    text-justify: inter-word;
+    width: 190px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.brand-name {
+    text-align: left;
+    width: 100px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.food-box-img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+
+
+
+/* nutrition-info*/
+
+
+.nutrition-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nutrition-info-header {
+    display: flex;
+    align-items: center;
+    background-color: #f7f9fb;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+.nutrition-info-food-name {
+    margin-left: 10px;
+}
+
+.nutrition-info-img {
+    padding: 10px;
+}
+
+.nutrition-info-body {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.nutrition-facts-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f9fb;
+    padding: 15px;
+    min-width: 350px;
+    width: 350px;
+    border-radius: 10px;
+    border: 0.5;
+    border-color: black;
+    border-style: groove;
+}
+
+.percent-daily-value-row {
+    display: flex;
+    justify-content: flex-end;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+    border-bottom-width: 1px;
+    border-color: black;
+    border-style: groove;
+}
+
+.amount-per-serving-row {
+    border-top: 1;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top-width: 5px;
+    border-color: black;
+    border-style: groove;
+}
+.calories-row {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+    border-bottom-width: 5px;
+    border-color: black;
+    border-style: groove;
+}
+
+.nutrition-info-img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.nutrition-facts-title {
+    font-size: 32px;
+}
+
+.calories-row,
+.total-fat-row,
+.saturated-fat-row,
+.poly-fat-row,
+.mono-fat-row,
+.cholesterol-row,
+.sodium-row,
+.potassium-row,
+.total-carbohydrates-row,
+.dietary-fiber-row,
+.sugars-row,
+.protein-row {
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+
+
+
+.calories-value,
+.total-fat-value,
+.saturated-fat-value,
+.poly-fat-value,
+.mono-fat-value,
+.cholesterol-value,
+.sodium-value,
+.potassium-value,
+.total-carbohydrates-value,
+.dietary-fiber-value,
+.sugars-value,
+.protein-value {
+    margin-left: 10px;
+}
+
+.total-fat-row,
+.saturated-fat-row,
+.poly-fat-row,
+.mono-fat-row,
+.cholesterol-row,
+.sodium-row,
+.potassium-row,
+.total-carbohydrates-row,
+.dietary-fiber-row,
+.sugars-row,
+.protein-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+    border-bottom-width: 1px;
+    border-color: black;
+    border-style: groove;
+}
+
+.total-fat-subrows,
+.total-carbohydrates-subrows {
+    margin-left: 15px;
+}
+
+.row-info-box {
+    display: flex;
+}
+
+
+/* burn kcal info */
+
+.nutrition-burn-kcal-flex-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.burn-kcal-header {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.burn-kcal-info-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+    background-color:#f7f9fb;
+    width: 480px;
+    border: 1px;
+    border-color: black;
+    border-style: groove;
+}
+
+.burn-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-box-about{
+    position: absolute;
+    text-align: center;
+    background-color: #010204;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: double;
+    width: 100%;
+    height: 25%;
+    margin-top: 300px;
+    margin-bottom: 0px;
+}
+
+.footer-box-contact{
+    position: absolute;
+    text-align: center;
+    background-color: #010204;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: double;
+    width: 100%;
+    height: 25%;
+    margin-top: 300px;
+    margin-bottom: 0px;
+}
+
+.footer-box-about{
+    position: absolute;
+    text-align: center;
+    background-color: #010204;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: double;
+    width: 100%;
+    height: 25%;
+    margin-top: 300px;
+    margin-bottom: 0px;
+}
+
+.footer-details {
+    margin: 0;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-creator-details {
+    padding: 18px;
+}
+
+.footer-paragraph {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 90px;
+    color: #FEFFFF;
+}
+
+
+.flex-container-footer {
+    display: flex;
+    height: 300px;
+}
+
+.web-logo {
+    position: absolute;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+    margin-bottom: -70px;
+    margin-top: 20px;
+    color:#DEF2F1;
+}
+
+.web-name{
+    position: absolute;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 100px;
+    margin-bottom: -70px;
+    margin-top: 40px;
+    color: white;
+
+}
+
+.web-name-footer {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color:white;
+    margin-top: -120px;
+    text-align: center;
+}
+
+.first-panel-about{
+    width: 100%;
+    height: 350px;
+    background-color:#FEFFFF;
+    padding: 50px 0;
+}
+
+.About-info{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about-statement {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-first-quote{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 10px;
+    color: black;
+}
+
+.about-site-info{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.first-panel-contact{
+    width: 100%;
+    height: 350px;
+    background-color:#FEFFFF;
+    padding: 50px 0;
+}
+
+.contact-info{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.contact-statement {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-first-quote{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 10px;
+    color: black;
+}
+
+.contact-site-info{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.bold-text-creators{
+    color:  white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 70px;
+    color: white;
+}
+
+.about-us-team-first-picture{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: -300px;
+}
+
+.about-us-team-second-picture{
+    text-align: center;
+    margin-top: -243px;
+    margin-left: 350px;
+}
+
+.about-us-founder-name{
+    text-align: center;
+    padding-top: -400px;
+    margin-left: -300px;
+    color: white;
+}
+
+.about-us-second-founder-name{
+    text-align: center;
+    padding-top: -400px;
+    margin-left: 350px;
+    color: white;
+}
+
+.img-container-contact-us-phone{
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+.img-container-contact-us-email{
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.img-container-contact-us-discord{
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.phone-numbers-for-contact-us{
+    margin-top: -535px;
+    margin-left: 350px;
+    font-weight: bold;
+    color: white;
+}
+
+.emails-for-contact-us{
+    margin-top: 190px;
+    margin-left: 350px;
+    font-weight: bold;
+    color: white;
+}
+
+.discord-for-contact-us{
+    margin-top: 200px;
+    margin-left: 350px;
+    font-weight: bold;
+    color: white;
+}
+
+.bold-text-contact-info{
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.front-page-name{
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    font-weight: bold;
+
+}
